@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.약::after{content: ""; clear: both; display: block;}
+
+*{margin: 0;padding: 0;}
+
+.전체{
+    /* 전체의 넓이는 부모인 body를 따르고,
+    전체의 높이는 자식인 김일동을 따른다 */
+    border: 5px solid red;
+    padding: 20px;
+}
+.김일동{
+    /* 전체의 넓이는 부모인 전체를 따르고
+    김일동의 높이는 자식인 텍스트 '김일동'을 따른다. */
+    border: 5px solid blue;
+}
+.김이동{
+    border: 5px solid green;
+    width: 300px;
+    margin: 0 auto; /* 상하 좌우 */
+}
+
+.김삼동{
+    border: 5px solid gold;
+    margin-top: 30px;
+}
+.김삼동 .삼자{
+    background-color: lightyellow;
+    width: 33.3333%;
+    float: left;
+}
+/* .김삼동 .치료{
+    clear: both;
+} */
+.김사동{
+    border: 5px solid purple;
+}
+.김사동 .사자{
+    background-color: lightpink;
+    width: 50%;
+    float: left;
+}
+/* ::after와 content는 꼭 같이 있어야함 
+:(콜론)이 2개가 있으면 가상의 공간
+:(콜론)이 1개가 있으면 실존의 공간 실행*/
